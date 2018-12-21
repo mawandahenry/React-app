@@ -12,3 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@media screen and (max-width: 480px) {
+  .yarno {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .yarno {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .yarno {
+margin-left: 0px;
+  }
+}
+.yarno{
+  margin-left: 200px;
+}
