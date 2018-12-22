@@ -35,7 +35,7 @@ toggler = () => {
 
     return (
 
-<div className = "card">
+<div className = "card col-md-8 col-sm-8 col-xs-8 dru" >
 <div className = "card-header">
 <h3 className="text-center text-danger">Contact List</h3>
 </div>

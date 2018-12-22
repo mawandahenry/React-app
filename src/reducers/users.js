@@ -1,8 +1,9 @@
 import React from 'react';
-import {FETCH_USERS,DELETE_USERS,EDIT_USER,UPDATE_USER} from '../actions/typos';
+import {FETCH_USERS,DELETE_USERS,EDIT_USER,UPDATE_USER,ADD_USER} from '../actions/typos';
 const state_0 = {
   portion: {},
-  fake: []
+  fake: [],
+  detail:[]
 }
 
 const Users = (state = state_0, action)=>{
@@ -29,6 +30,11 @@ const Users = (state = state_0, action)=>{
     return {
       ...state,
       portion:  action.payload
+    }
+    case ADD_USER:
+    return {
+      ...state,
+      state_0:  [action.payload, ...state.state_0]
     }
 
     default:

@@ -6,6 +6,7 @@ import Proptypes from 'prop-types';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
 import Form from './form';
 import Contact from './contact';
+import RegForm from './add_user';
 
 
 
@@ -33,6 +34,7 @@ panga = () => {
        <Switch>
        <Route exact path = "/" component = {Contact} />
        <Route exact path = "/form" component = {Form} />
+       <Route exact path = "/add" component = {RegForm} />
        </Switch>
 
       </div>

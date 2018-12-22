@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {FETCH_USERS,DELETE_USERS,EDIT_USER,UPDATE_USER} from './typos';
+import {FETCH_USERS,DELETE_USERS,EDIT_USER,UPDATE_USER,ADD_USER} from './typos';
 export const fetch_users =()=>async dispatch => {
   const res = await axios.get('https://jsonplaceholder.typicode.com/users');
   dispatch({
@@ -27,5 +27,12 @@ export const update_users = (load) => async dispatch => {
   dispatch({
     type: UPDATE_USER,
     payload: xx.data
+  })
+}
+export const add_users = (work) => async dispatch => {
+  const y = await axios.post('https://jsonplaceholder.typicode.com/users',work);
+  dispatch({
+    type: ADD_USER,
+    payload: y.data
   })
 }
